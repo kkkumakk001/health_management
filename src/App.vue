@@ -1,7 +1,12 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/list">List</router-link> |
+    <router-link to="/graph">Graph</router-link> |
+    <router-link to="/config">Config</router-link> |
+    <router-link to="/addEdit">AddEdit</router-link> |
+    <router-link to="/login">Login</router-link> |
+    <router-link to="/logout">Logout</router-link>
   </nav>
   <router-view/>
 </template>
