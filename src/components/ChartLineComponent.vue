@@ -1,23 +1,36 @@
 <script>
 import { defineComponent, h } from 'vue'
-import { Doughnut } from 'vue-chartjs'
+import { Line } from 'vue-chartjs'
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
   Legend,
-  ArcElement,
-  CategoryScale,
+  LineElement,
+  LinearScale,
+  PointElement,
+  CategoryScale
 } from 'chart.js'
 
-ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale)
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  LinearScale,
+  PointElement,
+  CategoryScale
+)
 
 export default defineComponent({
-  name: 'DoughnutChart',
+  name: 'LineChart',
+  components: {
+    Line
+  },
   props: {
     chartId: {
       type: String,
-      default: 'doughnut-chart'
+      default: 'line-chart'
     },
     width: {
       type: Number,
@@ -42,11 +55,12 @@ export default defineComponent({
   },
   setup(props) {
     const chartData = {
-      labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+      labels: ['1日','2日','3日','4日','5日','6日','7日','8日','9日','10日','11日','12日'],
       datasets: [
         {
-          backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-          data: [40, 20, 80, 10]
+          label: '体重',
+          backgroundColor: '#256649',
+          data: [55,60,56,57,61,63,58,59,56,58,60,57]
         }
       ]
     }
@@ -57,7 +71,7 @@ export default defineComponent({
     }
 
     return () =>
-      h(Doughnut, {
+      h(Line, {
         chartData,
         chartOptions,
         chartId: props.chartId,
@@ -70,3 +84,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+#line-chart {
+  padding-top: 100px;
+}
+</style>
