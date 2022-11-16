@@ -1,11 +1,11 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
+    <!-- <router-link to="/">Home</router-link> | -->
     <router-link to="/list">List</router-link> |
     <router-link to="/graph">Graph</router-link> |
-    <router-link to="/config">Config</router-link> |
-    <router-link to="/addEdit">AddEdit</router-link> |
-    <router-link to="/logout">Logout</router-link>
+    <router-link to="/config">Config</router-link>
+    <!-- <router-link to="/addEdit">AddEdit</router-link> | -->
+    <!-- <router-link to="/logout">Logout</router-link> -->
   </nav>
   <transition name="fade">
     <router-view/>
