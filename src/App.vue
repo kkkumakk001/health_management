@@ -5,10 +5,11 @@
     <router-link to="/graph">Graph</router-link> |
     <router-link to="/config">Config</router-link> |
     <router-link to="/addEdit">AddEdit</router-link> |
-    <router-link to="/login">Login</router-link> |
     <router-link to="/logout">Logout</router-link>
   </nav>
-  <router-view/>
+  <transition name="fade">
+    <router-view/>
+  </transition>
 </template>
 
 <style lang="scss">
@@ -32,6 +33,22 @@ nav {
     }
   }
 }
+
+.fade-enter-active {
+    transition: opacity 3s;
+    opacity: 0;
+  }
+  .fade-enter-to {
+    opacity: 1;
+  }
+
+  .fade-leave-active {
+    transition: opacity 3s;
+    opacity: 1;
+  }
+  .fade-leave-to {
+    opacity: 0;
+  }
 </style>
 
 
