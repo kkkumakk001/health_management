@@ -7,8 +7,8 @@
     <!-- <router-link to="/addEdit">AddEdit</router-link> | -->
     <!-- <router-link to="/logout">Logout</router-link> -->
   </nav>
-  <transition name="fade">
-    <router-view/>
+  <transition name="fade" mode="out-in">
+    <router-view class="view"></router-view>
   </transition>
 </template>
 
