@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhealth_management"]=self["webpackChunkhealth_management"]||[]).push([[170],{3294:function(n,e,t){t.r(e),t.d(e,{default:function(){return i}});var a=t(3396);const u={class:"logout"},r=(0,a._)("h1",null,"This is an logout page",-1),s=[r];function l(n,e){return(0,a.wg)(),(0,a.iD)("div",u,s)}var c=t(89);const h={},o=(0,c.Z)(h,[["render",l]]);var i=o}}]);
+//# sourceMappingURL=logout.41732dd4.js.map

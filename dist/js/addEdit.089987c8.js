@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhealth_management"]=self["webpackChunkhealth_management"]||[]).push([[211],{4203:function(n,a,e){e.r(a),e.d(a,{default:function(){return l}});var t=e(3396);const r={class:"addEdit"},s=(0,t._)("h1",null,"This is an addEdit page",-1),u=[s];function d(n,a){return(0,t.wg)(),(0,t.iD)("div",r,u)}var i=e(89);const c={},h=(0,i.Z)(c,[["render",d]]);var l=h}}]);
+//# sourceMappingURL=addEdit.089987c8.js.map
