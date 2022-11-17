@@ -35,7 +35,7 @@ nav {
 }
 
 .fade-enter-active {
-    transition: opacity 3s;
+    transition: opacity 1.5s;
     opacity: 0;
   }
   .fade-enter-to {
@@ -43,7 +43,7 @@ nav {
   }
 
   .fade-leave-active {
-    transition: opacity 3s;
+    transition: opacity 1.5s;
     opacity: 1;
   }
   .fade-leave-to {
